@@ -12,8 +12,64 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">GGS Portfolio</a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                
+                <!-- Dropdown Menu untuk Pengajaran -->
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">
+                        Pengajaran
+                        <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+                            <path d="M6 9L1 4h10L6 9z"/>
+                        </svg>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#pengenalan" class="dropdown-item">
+                            <svg class="item-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#E34F26" stroke-width="2"/>
+                            </svg>
+                            <span>HTML Tutorial</span>
+                        </a>
+                        <a href="#pengenalan" class="dropdown-item">
+                            <svg class="item-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#1572B6" stroke-width="2"/>
+                            </svg>
+                            <span>CSS Tutorial</span>
+                        </a>
+                        <a href="#pengenalan" class="dropdown-item">
+                            <svg class="item-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#F7DF1E" stroke-width="2"/>
+                            </svg>
+                            <span>JavaScript Tutorial</span>
+                        </a>
+                        <a href="#kesan-pesan" class="dropdown-item">
+                            <svg class="item-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="#666" stroke-width="2"/>
+                            </svg>
+                            <span>Kesan & Pesan</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
-        <header class="hero scroll-animate-left">
+        <header class="hero scroll-animate-left" id="home">
             <div class="hero-content">
                 <p class="hero-label">Portfolio</p>
                 <h1>Gregorian Goclio Sinaga</h1>
@@ -25,7 +81,7 @@
         <div class="section-divider"></div>
 
         <main>
-            <section class="about scroll-animate-left">
+            <section class="about scroll-animate-left" id="about">
                 <div class="section-header">
                     <span class="section-number">01</span>
                     <h2>Tentang Saya</h2>
@@ -124,10 +180,99 @@
                 </div>
             </section>
 
-            <!-- SECTION 03: TUTORIAL MEMBUAT WEBSITE -->
-            <section class="tutorial scroll-animate-left">
+            <!-- SECTION 03: MENGENAL HTML, CSS, JAVASCRIPT, TAILWIND -->
+            <section class="pengenalan scroll-animate-left" id="pengenalan">
                 <div class="section-header">
                     <span class="section-number">03</span>
+                    <h2>Mengenal HTML, CSS, Javascript dan Tailwind</h2>
+                </div>
+                <div class="pengenalan-intro">
+                    <p>Dalam pengembangan web modern, terdapat empat teknologi fundamental yang wajib dikuasai. HTML, CSS, JavaScript, dan Tailwind CSS memiliki peran yang berbeda namun saling melengkapi dalam menciptakan website yang menarik dan interaktif.</p>
+                </div>
+                
+                <div class="tech-grid">
+                    <div class="tech-card scroll-animate-left">
+                        <div class="tech-icon html-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 17.56l-5.33-1.95V8.43L12 6.44l5.33 1.99v7.18L12 17.56z" fill="#E34F26"/>
+                                <path d="M3.75 3l1.5 16.5L12 21.75l6.75-2.25L20.25 3H3.75z" stroke="#E34F26" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <h3>HTML</h3>
+                        <p class="tech-subtitle">HyperText Markup Language</p>
+                        <p class="tech-description">Bahasa markah untuk membuat struktur dan konten halaman web. HTML menggunakan tag untuk menyusun elemen seperti teks, gambar, video, dan link.</p>
+                        <ul class="tech-features">
+                            <li>Struktur dasar halaman web</li>
+                            <li>Semantic markup untuk SEO</li>
+                            <li>Aksesibilitas konten</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-card scroll-animate-left delay-1-left">
+                        <div class="tech-icon css-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+                                <path d="M3.75 3l1.5 16.5L12 21.75l6.75-2.25L20.25 3H3.75z" stroke="#1572B6" stroke-width="1.5"/>
+                                <rect x="8" y="8" width="8" height="8" fill="#1572B6" opacity="0.3"/>
+                            </svg>
+                        </div>
+                        <h3>CSS</h3>
+                        <p class="tech-subtitle">Cascading Style Sheets</p>
+                        <p class="tech-description">Bahasa styling untuk mendesain tampilan visual halaman web. CSS mengontrol layout, warna, font, dan spacing untuk menciptakan desain yang menarik dan konsisten.</p>
+                        <ul class="tech-features">
+                            <li>Styling dan layout halaman</li>
+                            <li>Responsive design</li>
+                            <li>Animasi dan transisi</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-card scroll-animate-left delay-2-left">
+                        <div class="tech-icon js-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+                                <rect x="3" y="3" width="18" height="18" fill="#F7DF1E"/>
+                                <text x="12" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="#000">JS</text>
+                            </svg>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p class="tech-subtitle">Programming Language</p>
+                        <p class="tech-description">Bahasa pemrograman untuk menambahkan interaktivitas dan fungsi dinamis ke halaman web. JavaScript membuat website responsif terhadap aksi pengguna.</p>
+                        <ul class="tech-features">
+                            <li>Interaktivitas halaman web</li>
+                            <li>Manipulasi DOM</li>
+                            <li>Validasi form & AJAX</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-card scroll-animate-left">
+                        <div class="tech-icon tailwind-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.31.75 1.91 1.36C13.43 10.89 14.6 12 17 12c2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.31-.75-1.91-1.36C15.57 7.11 14.4 6 12 6z" fill="#06B6D4"/>
+                                <path d="M7 12c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.31.75 1.91 1.36C8.43 16.89 9.6 18 12 18c2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.31-.75-1.91-1.36C10.57 13.11 9.4 12 7 12z" fill="#06B6D4"/>
+                            </svg>
+                        </div>
+                        <h3>Tailwind CSS</h3>
+                        <p class="tech-subtitle">Utility-First CSS Framework</p>
+                        <p class="tech-description">Framework CSS modern dengan pendekatan utility-first. Tailwind menyediakan class utility yang dapat dikombinasikan untuk membangun desain custom dengan cepat.</p>
+                        <ul class="tech-features">
+                            <li>Utility classes yang fleksibel</li>
+                            <li>Customisasi mudah</li>
+                            <li>Development lebih cepat</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="collaboration-box scroll-animate-left">
+                    <h3>🤝 Bagaimana Mereka Bekerja Bersama?</h3>
+                    <div class="collaboration-content">
+                        <p><strong>HTML</strong> menyediakan struktur dasar dan konten halaman web. <strong>CSS</strong> atau <strong>Tailwind CSS</strong> menambahkan gaya visual untuk membuat halaman menarik. <strong>JavaScript</strong> memberikan fungsi interaktif untuk membuat halaman dinamis dan responsif terhadap aksi pengguna.</p>
+                        <p>Dengan menguasai keempat teknologi ini, Anda dapat menciptakan website modern yang tidak hanya indah secara visual, tetapi juga fungsional dan user-friendly.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 04: TUTORIAL MEMBUAT WEBSITE -->
+            <section class="tutorial scroll-animate-left" id="tutorial">
+                <div class="section-header">
+                    <span class="section-number">04</span>
                     <h2>Tata Cara Membuat Website Sederhana</h2>
                 </div>
                 <div class="tutorial-intro">
@@ -137,8 +282,8 @@
                 <div class="steps-container">
                     <div class="step-card scroll-animate-left">
                         <div class="step-number">01</div>
-                        <h3>Pilih Software Code </h3>
-                        <p>Pilih Software untuk menulis kode seperti Visual Studio Code, Notepad++, atau Sublime Text. Editor ini memiliki fitur syntax highlighting yang memudahkan proses coding.</p>
+                        <h3>Pilih Editor Kode</h3>
+                        <p>Pilih text editor untuk menulis kode seperti Visual Studio Code, Notepad++, atau Sublime Text. Editor ini memiliki fitur syntax highlighting yang memudahkan proses coding.</p>
                     </div>
                     
                     <div class="step-card scroll-animate-left delay-1-left">
@@ -182,9 +327,57 @@
                     </ul>
                 </div>
             </section>
+
+            <!-- SECTION 05: KESAN DAN PESAN -->
+            <section class="kesan-pesan scroll-animate-left" id="kesan-pesan">
+                <div class="section-header">
+                    <span class="section-number">05</span>
+                    <h2>Kesan dan Pesan Belajar Pemrograman Web</h2>
+                </div>
+                
+                <div class="kesan-pesan-content">
+                    <div class="kesan-box scroll-animate-left">
+                        <div class="kesan-header">
+                            <svg class="kesan-icon" width="48" height="48" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#2563EB" opacity="0.2"/>
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="#2563EB" stroke-width="2"/>
+                            </svg>
+                            <h3>Kesan</h3>
+                        </div>
+                        <div class="kesan-content">
+                            <p>Belajar pemrograman web merupakan pengalaman yang sangat menarik dan menantang. Proses memahami bagaimana HTML, CSS, dan JavaScript bekerja bersama membuka wawasan baru tentang cara kerja website yang selama ini kita gunakan sehari-hari.</p>
+                            <p>Awalnya, melihat banyaknya kode dan syntax terasa menakutkan, tetapi seiring waktu dan praktik yang konsisten, semuanya mulai masuk akal. Momen ketika berhasil membuat website pertama yang berfungsi dengan baik memberikan kepuasan tersendiri dan motivasi untuk terus belajar lebih dalam.</p>
+                            <p>Saya juga merasakan betapa pentingnya kesabaran dan ketelitian dalam coding. Sebuah kesalahan kecil seperti lupa menutup tag atau salah ketik nama class bisa menyebabkan website tidak berfungsi sebagaimana mestinya.</p>
+                        </div>
+                    </div>
+
+                    <div class="pesan-box scroll-animate-left">
+                        <div class="pesan-header">
+                            <svg class="pesan-icon" width="48" height="48" viewBox="0 0 24 24" fill="none">
+                                <rect x="3" y="5" width="18" height="14" rx="2" fill="#2563EB" opacity="0.2"/>
+                                <path d="M3 8l9 6 9-6" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+                                <rect x="3" y="5" width="18" height="14" rx="2" stroke="#2563EB" stroke-width="2"/>
+                            </svg>
+                            <h3>Pesan</h3>
+                        </div>
+                        <div class="pesan-content">
+                            <p><strong>Untuk Teman-teman:</strong> Jangan takut untuk memulai! Setiap web developer profesional pernah menjadi pemula. Mulailah dengan hal-hal sederhana, dan jangan ragu untuk membuat kesalahan karena dari kesalahan itulah kita belajar paling banyak.</p>
+                            <p><strong>Untuk Diri Sendiri:</strong> Tetap konsisten dalam belajar dan jangan mudah menyerah ketika menghadapi bug atau error yang sulit. Setiap masalah adalah kesempatan untuk belajar sesuatu yang baru. Teruslah eksplorasi teknologi-teknologi web terbaru dan ikuti perkembangan industri.</p>
+                            <p><strong>Untuk Masa Depan:</strong> Kuasai fundamental dengan baik sebelum melompat ke framework atau library yang lebih kompleks. Pemahaman yang kuat tentang HTML, CSS, dan JavaScript akan sangat membantu dalam mempelajari teknologi apapun di masa depan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-kesan scroll-animate-left">
+                    <blockquote>
+                        "The best way to learn web development is by building projects. Start small, stay consistent, and never stop learning."
+                    </blockquote>
+                    <p class="quote-author">— Perjalanan Belajar Saya</p>
+                </div>
+            </section>
         </main>
 
-        <section class="contact-info">
+        <section class="contact-info" id="contact">
             <div class="container">
                 <div class="contact-box scroll-animate-left">
                     <div class="icon instagram-icon"></div>
@@ -211,6 +404,46 @@
             </div>
         </footer>
     </div>
+
+    <!-- JavaScript untuk Mobile Menu dan Dropdown -->
+    <script>
+        // Hamburger Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile dropdown toggle
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+        const dropdown = document.querySelector('.dropdown');
+        
+        if (window.innerWidth <= 768) {
+            dropdownToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
 </html>
-
